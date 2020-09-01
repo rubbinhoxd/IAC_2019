@@ -37,10 +37,10 @@ main:
 
     mov eax, [hr] ;mov a variavel hr para eax
     mul esi; multiplica a variavel hr por 3600, ou seja, ta transformando hr em seg
-	add [segundos], eax ;salva o resultado na variavel segundos
+    add [segundos], eax ;salva o resultado na variavel segundos
     mov eax, [min]; multplica o numero digitado pelo usuario no caso 'min' para eax
-	mul edi ;multiplica o resultado de eax por 60
-	add eax, [segundos] ;leva o resultado de hr+seg e joga com os segundos convertidos para eax
+    mul edi ;multiplica o resultado de eax por 60
+    add eax, [segundos] ;leva o resultado de hr+seg e joga com os segundos convertidos para eax
         
        
 
